@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 Route::post('/register', [UserController::class,'register']);
 Route::get('list', [UserController::class,'show']);
+
+Route::post('/logout',[UserController::class,'logout']);
+Route::post('/login',[UserController::class,'login']);
